@@ -90,6 +90,6 @@ These are the files and folders that make up the project;
 
 ## Functionality ⚙️
 
-Like with all the other projects, a screencast was recorded for demonstation of the travel planning website being used. if you want to see it in action, click the thumbnail below; 
+Like with all the other projects, a screencast was recorded for demonstation of the travel planning website and how it is used. if you want to see it in action, click the thumbnail below; 
 
 [![CS50W Final Project YT Thumbnail](https://i9.ytimg.com/vi_webp/Y0dkbPHbsA0/mqdefault.webp?v=674c3d3e&sqp=CJyA_7sG&rs=AOn4CLBwvsIlzYHMX0lFpICwp00J4rzLwQ)](https://youtu.be/Y0dkbPHbsA0)
