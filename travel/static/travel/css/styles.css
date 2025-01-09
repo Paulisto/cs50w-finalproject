@@ -1,0 +1,60 @@
+.bg-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.card-img-top {
+    width: auto;
+    object-fit: contain;
+}
+
+.bg-overlay {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay opacity */
+    z-index: 1;
+}
+
+.bg-overlay h1, h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+#destination-list-map {
+    height: 450px;
+    width: auto;
+}
+
+.star-rating {
+    display: flex;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.star-rating .star {
+    color: #a9a9a9;
+}
+
+.star-rating .star.selected {
+    color: gold; /*Colour changed to gold for selected stars*/
+}

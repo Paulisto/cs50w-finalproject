@@ -1,0 +1,302 @@
+[
+    {
+        "model": "travel.destination",
+        "pk": 1,
+        "fields": {
+            "name": "Cape Town",
+            "description": "Nestled between majestic Table Mountain and the Atlantic Ocean, Cape Town boasts stunning natural beauty, vibrant culture and world-class wine regions.",
+            "location": "South Africa",
+            "latitude": -33.9289920,
+            "longitude": 18.4173960,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Cape-Town-Secret-Cape-Town.jpg",
+            "image_attribution": "Secret Cape Town",
+            "region": "Africa"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 2,
+        "fields": {
+            "name": "Zanzibar",
+            "description": "This stunning archipelago off Tanzania's coast offers pristine beaches, crystal clear waters and a rich history",
+            "location": "Tanzania",
+            "latitude": -6.201,
+            "longitude": 39.315,
+            "type": "Island",
+            "destination_image": "static/travel/destination_images/Zanzibar-Platinum-Safaris-Uganda.jpg",
+            "image_attribution": "Platinum Safaris Uganda",
+            "region": "Africa"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 3,
+        "fields": {
+            "name": "London",
+            "description": "Explore England's iconic capital, steeped in history and culture. From Buckingham Palace to the Tower of London, visit famous landmarks and have a good time.",
+            "location": "United Kingdom",
+            "latitude": 51.5010,
+            "longitude": -0.1250,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/London-London-City-Break.jpg",
+            "image_attribution": "London City Break",
+            "region": "Europe"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 4,
+        "fields": {
+            "name": "Bwindi Impenetrable National Park",
+            "description": "Venture into the lush rainforest situated in southwestern Uganda, home to majestic mountain gorillas. Trek through dense foliage and experience the raw beauty of Uganda's wilderness.",
+            "location": "Uganda",
+            "latitude": -1.0306,
+            "longitude": 29.7105,
+            "type": "Landmark",
+            "destination_image": "static/travel/destination_images/bwindi-impenetrable-uganda-destination-uganda.jpg",
+            "image_attribution": "Destination Uganda",
+            "region": "Africa"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 5,
+        "fields": {
+            "name": "Marrakech",
+            "description": "Immerse yourself in Marrakech's vibrant souks, stunning architecture and delectable cuisine. Get lost in the ancient medina, relax in tranquil riads, and soak up the city's infectioius energy.",
+            "location": "Morocco",
+            "latitude": 31.6224,
+            "longitude": -7.9898,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Marrakech-Naturally-Morocco.jpg",
+            "image_attribution": "Martin Harvey, Naturally Morocco",
+            "region": "Africa"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 6,
+        "fields": {
+            "name": "Montpellier",
+            "description": "Discover the charm of southern France in Montpeiller, with its picturesque old town, stunning architecture and vibrant cultural scene. Enjoy wine tastings and Mediterranean cuisine.",
+            "location": "France",
+            "latitude": 43.6095,
+            "longitude": 3.8768,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Montpellier-Montpellier-Tourism.jpg",
+            "image_attribution": "Montpellier Tourism",
+            "region": "Europe"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 7,
+        "fields": {
+            "name": "Mykonos",
+            "description": "Escape to Greece's vibrant island paradise, famous for pristine beaches, crystal-clear waters and vibrant nightlife. Wander Mykonos Towns winfing streets and enjoy fresh seafood.",
+            "location": "Greece",
+            "latitude": 37.4495,
+            "longitude": 25.3846,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Mykonos-Visit-Greece.png",
+            "image_attribution": "Visit Greece",
+            "region": "Europe"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 8,
+        "fields": {
+            "name": "Dubai",
+            "description": "Experience the opulence and grandeur of Dubai from iconic skycrapers to luxurious shopping malls.",
+            "location": "United Arab Emirates",
+            "latitude": 25.260,
+            "longitude": 55.311,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Dubai-Expedia.jpg",
+            "image_attribution": "Expedia",
+            "region": "Asia and Middle East"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 9,
+        "fields": {
+            "name": "Tokyo",
+            "description": "Dive into Tokyo's fascinating blend of tradition and innovation. Explore neon-lit streets, ancient temples and world-class cuisine, from sushi to ramen.",
+            "location": "Japan",
+            "latitude": 35.39,
+            "longitude": 139.92,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Tokyo-Unsplash.jpeg",
+            "image_attribution": "Unsplash",
+            "region": "Asia and Middle East"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 10,
+        "fields": {
+            "name": "Bali",
+            "description": "Find serenity inBali's lush landscapes, stunning beaches and vibrant culture. Visit ancient temples, watch traditional dance performances and indulge in local cuisine.",
+            "location": "Indonesia",
+            "latitude": -8.385,
+            "longitude": 115.134,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Bali-Daily-Sabah.jpeg",
+            "image_attribution": "Daily Sabah",
+            "region": "Asia and Middle East"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 11,
+        "fields": {
+            "name": "New Orleans",
+            "description": "Discover the birthplace of jazz located along the Mississippi River, where vibrant music scenes meet rich culture and mouthwatering Creole cuisine. Explore the French Quarter, visit Bourbon Street and experience festivals like the Mardi Gras.",
+            "location": "United States",
+            "latitude": 29.9740,
+            "longitude": -90.0762, 
+            "type": "City",
+            "destination_image": "static/travel/destination_images/New-Orleans-Faraway-Worlds.jpeg",
+            "image_attribution": "Faraway Worlds",
+            "region": "North and Central America & Caribbean"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 12,
+        "fields": {
+            "name": "Murchison Falls National Park",
+            "description": "Witness the awe-inspiring Murchison Falls, where the Victoria Nile thunders through a 7-metre gorge. Explore the park's diverse wildlife, from lions to hippos.",
+            "location": "Uganda",
+            "latitude": 2.1748,
+            "longitude": 31.9661, 
+            "type": "Landmark",
+            "destination_image": "static/travel/destination_images/Murchison-Falls-National-Park-Uganda-Wildlife-Authority.jpeg",
+            "image_attribution": "Uganda Wildlife Authority",
+            "region": "Africa"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 13,
+        "fields": {
+            "name": "Montego Bay",
+            "description": "Relax on stunning beaches, explore historic sites like Dunn's River Falls and soak up Jamaica's laid-back vibe. Enjoy reggae music, delicious jerk cuisine and vibrant cuisine.",
+            "location": "Jamaica",
+            "latitude": 18.47208,
+            "longitude": -77.91942,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Montego-Bay-Visit-Jamaica.jpg",
+            "image_attribution": "Visit Jamaica",
+            "region": "North and Central America & Caribbean"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 14,
+        "fields": {
+            "name": "Cancun",
+            "description": "Unwind on pristine Caribbean beaches, dive in crystal-clear waters and explore ancient Mayan ruins. Experience Cancun's vibrant nightlife and delectable Mexican cuisine.",
+            "location": "Mexico",
+            "latitude": 21.1159,
+            "longitude": -86.8847,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Cancun-Canacun-Shuttle.jpg",
+            "image_attribution": "Cancun Shuttle",
+            "region": "North and Central America & Caribbean"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 15,
+        "fields": {
+            "name": "Dakar",
+            "description": "Senegal's vibrant capital is a blend of rich history, stunning ocean views and African culture.",
+            "location": "Senegal",
+            "latitude": 14.7216,
+            "longitude": -17.4728,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/dakar-senegal.jpg",
+            "image_attribution": "Encyclopaedia Africana",
+            "region": "Africa"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 16,
+        "fields": {
+            "name": "New Delhi",
+            "description": "Experience the vibrant tapestry of India's capital as it blends rich history, diverse culture and modern charm. Explore the Red Fort, Qutub Minar and Humayun's Tomb and immerse yourself in the city's spicy street food and bustling markets.",
+            "location": "India",
+            "latitude": 28.5635,
+            "longitude": 77.1528,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/India-Gate-Travelsetu.jpg",
+            "image_attribution": "Travelsetu",
+            "region": "Asia and Middle East"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 17,
+        "fields": {
+            "name": "Sydney",
+            "description": "Explore Australia's picturesque harbour city, complete with a stunning coastline, iconic landmarks and cosmopolitan vibe.",
+            "location": "Australia",
+            "latitude": -33.770,
+            "longitude": 150.802,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Sydney-Opera-House-Sydney-com.jpeg",
+            "image_attribution": "Sydney.com",
+            "region": "Oceania"
+        }
+    }, 
+    {
+        "model": "travel.destination",
+        "pk": 18,
+        "fields": {
+            "name": "Rio de Janeiro",
+            "description": "If you're looking a combination and breathtaking beaches, then Rio is the place to be. From the Copacabana to Christ the Redeemer, let Rio's infectious energy captivate you.",
+            "location": "Brazil",
+            "latitude": -22.9135,
+            "longitude": -43.2072,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Rio-de-Janeiro-Britannica.jpg",
+            "image_attribution": "Britannica",
+            "region": "South America"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 19,
+        "fields": {
+            "name": "Shanghai",
+            "description": "Unlock the secrets of China's cosmopolitan hub where a futuristic skyline, colonial architecture and bustling streets create an unforgettable blend.",
+            "location": "China",
+            "latitude": 31.2325,
+            "longitude": 121.4691,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Shanghai-Tower-Britannica.jpg",
+            "image_attribution": "Britannica",
+            "region": "Asia and Middle East"
+        }
+    },
+    {
+        "model": "travel.destination",
+        "pk": 20, 
+        "fields": {
+            "name": "Jinja",
+            "description": "Find adventure and serenity in Jinja. Discover the source of the Nile, raft its mighty waters, or relax on Lake Victoria's shores. Experience warm African hospitality and stunning natural beauty in this hidden gem.",
+            "location": "Uganda",
+            "latitude": 0.4848,
+            "longitude": 33.1868,
+            "type": "City",
+            "destination_image": "static/travel/destination_images/Jinja-city-Uganda-Holiday-Guide.jpg",
+            "image_attribution": "Uganda Holiday Guide",
+            "region": "Africa"
+        }
+    }
+]

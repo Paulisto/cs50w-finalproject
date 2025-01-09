@@ -1,0 +1,36 @@
+{% extends "travel/layout.html" %}
+{% load static %}
+
+{% block title %}Edit Itinerary for {{ trip.destination}} || Travel Pouch{% endblock %}
+{% block body%}
+    <h1 class="my-4 text-center title">Edit Itinerary for {{ trip.destination}}</h1>
+
+    <form>
+        {% csrf_token %}
+        {{ formset.management_form }}
+        <div class="container">
+            {% for form in formset %}
+            <div class="card border border-dark my-4 p-2">
+                <div class="activity-form">
+                    {{ form.name.label_tag }} {{ form.name }}
+                    {{ form.description.label_tag }} {{ form.description }}
+                    {{ form.date.label_tag }} {{ form.date }}
+                    {{ form.time.label_tag }} {{ form.time }}
+
+                    {% if form.instance.pk %} <!-- Only shows delete checkbox for existing activities -->
+                    <p class="my-2">
+                        <label for="{{ form.prefix }}-DELETE">
+                            <i class="fa fa-trash" aria-hidden="true"></i> Remove from itinerary
+                        </label>
+                        {{ form.DELETE }}
+                    </p>
+                    {% endif %}
+                    {{ form.id }}
+                </div>
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </div>
+    </form>
+
+{% endblock %}

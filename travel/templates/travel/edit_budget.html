@@ -1,0 +1,51 @@
+{% extends "travel/layout.html" %}
+{% load static %}
+
+{% block title%}Add or Edit Expenses for {{ trip.destination }} | Travel Pouch{% endblock %}
+
+{% block body %}
+    <h1 class="my-4 text-center title">Add or Edit Expenses for {{ trip.destination }}</h1>
+
+    <p class="text-center">Trying not to overspend? Manage and keep track of your costs using the Budget Tracker!!!</p>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="{% url 'trip' trip.id %}" class="btn btn-outline-primary">Go back</a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+        <!-- Trip Budget section -->
+            <div class="col-lg-4">
+                <h3>Trip Budget: <small>UGX {{ trip.budget }}</small></h3>     
+            </div>
+        </div>
+    </div>
+
+    <form method="POST" action="{% url 'editbudget' trip.id %}">
+        {% csrf_token %}
+        {{ formset.management_form }}
+        <div class="container">
+            {% for form in formset %}
+            <div class="card border border-dark my-4 p-2">
+                <div class="expense-form">
+                    {{ form.description.label_tag }} {{ form.description }}
+                    {{ form.amount.label_tag }} {{ form.amount }}
+                    {{ form.date.label_tag }} {{ form.date }}
+
+                    {% if form.instance.pk %} <!-- Only shows delete checkbox for existing expenses -->
+                    <p class="my-2">
+                        <label for="{{ form.prefix }}-DELETE">
+                            <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                        </label>
+                        {{ form.DELETE }}
+                    </p>
+                    {% endif %}
+                    {{ form.id }}
+                </div>
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+{% endblock %}

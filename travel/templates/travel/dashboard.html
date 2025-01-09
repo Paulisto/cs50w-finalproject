@@ -1,0 +1,32 @@
+{% extends "travel/layout.html" %}
+{% load static %}
+
+{% block title%}My Dashboard | Travel Pouch{% endblock %}
+{% block body %}
+    <h1 class="my-4 text-center title">Welcome, {{ user.username }}</h1>
+    <div class="container my-2 pb-4">
+        <h3 class="my-4">Your Upcoming Trips</h3>
+        <div class="row justify-content-center">
+            {% for trip in trips %}
+        <div class="media border p-3">
+            <img src="{{ trip.destination.destination_image }}" alt="{{ trip.destination }}" class="mr-3 mt-3 rounded-circle" width="100" height="100">
+            <div class="media-body">
+                <a href="{% url 'trip' trip.id %}" class="btn btn-link"><h4>{{ trip.destination }}</h4></a>
+                <p><i>From</I> {{ trip.start_date }} <i> to </i> {{ trip.end_date }}</p>
+            </div>
+        </div>
+        {% empty %}
+        <div class="card border-0">
+            <img src="static/travel/home_icons/no_trips_icon.png" class="card-img-top" style="height: 300px;">
+            <div class="card-body text-center">
+                <h4 class="card-title">You have no upcoming trips.</h4>
+                <p class="card-text">Click on the Plan a New Trip button to add one.</p>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+        <div class="row justify-content-center my-4">
+            <a href="{% url 'newtrip' %}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Plan a New Trip</a>
+        <div>
+    </div>
+{% endblock %}

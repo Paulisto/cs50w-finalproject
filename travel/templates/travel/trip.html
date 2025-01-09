@@ -1,0 +1,75 @@
+{% extends "travel/layout.html" %}
+{% load static %}
+
+{% block title%}{{ trip.destination}} - Trip Details | Travel Pouch{% endblock %}
+{% block body %}
+    <h1 class="my-4 text-center title">Your Trip to {{ trip.destination}}</h1>
+
+    <div class="container p-4 my-4">
+        <div class="row">
+            <!-- Trip Overview section -->
+            <div class="col-lg-4">
+                <h3>Trip Overview</h3>
+                <p title="Start and end dates of your trip"><i class="fa fa-calendar" aria-hidden="true"></i> <strong>{{ trip.start_date }} to {{ trip.end_date }}</strong></p>
+                <h5 class="text-success" title="Trip budget"><i class="fa fa-money" aria-hidden="true"></i> UGX {{ trip.budget }}</h5>
+            </div>
+        </div>
+
+       <div class="row py-4 mt-4 border rounded">
+            <!-- Itinerary section -->
+            <div class="col-lg-4">
+                <h3>Itinerary</h3>
+                <!-- Debugging output -->
+
+               {% if activities %}
+                    <ul>
+                        {% for activity in activities %}
+                            <li><strong>{{ activity.date|date:"F j, Y" }}</strong> - {{ activity.time }} - <i>{{ activity.name }}</i></li>
+                        {% endfor %}
+                    </ul>
+                    <a href="{% url 'edititinerary' trip.id %}" class="btn btn-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                {% else %}
+                    <p>No activities found, yet! Click <a href="{% url 'createitinerary' trip.id %}">here</a> to create an itinerary.</p>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="row py-4 mt-4 border rounded">
+            <!--Budget tracker section-->
+            <div class="col-lg-4">
+                <h3>Budget Tracker</h3>
+                <span><strong>Total Budget:</strong> UGX {{ trip.budget }}</span>
+                </br>
+                <span><strong>Total Expenses:</strong> UGX {{ total_expenses }}</span>
+                </br>
+                <span class="text-success"><strong>Remaining Budget:</strong> UGX {{ remaining_budget }}</span>
+
+                <h5 class="my-4">Expense List</h5>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    <thead>
+                    <tbody>
+                        {% for expense in expenses %}
+                        <tr>
+                            <td>{{ expense.description }}</td>
+                            <td>{{ expense.amount }}</td>
+                            <td>{{ expense.date }}</td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="3" class="text-center">No expenses added yet</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <a href="{% url 'editbudget' trip.id %}" class="btn btn-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

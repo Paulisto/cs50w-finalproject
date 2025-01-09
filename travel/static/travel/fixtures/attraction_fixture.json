@@ -1,0 +1,311 @@
+[
+    {
+        "model": "travel.attraction",
+        "pk": 1,
+        "fields": {
+            "name": "Table Mountain",
+            "destination": 1,
+            "latitude": -33.959049,
+            "longitude": 18.404956,
+            "attraction_image": "static/travel/attraction_images/Table-Mountain-Cape-Town-Western-Bay-South.jpg"
+        }
+
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 2,
+        "fields": {
+            "name": "Castle of Good Hope",
+            "destination": 1,
+            "latitude": -33.925851,
+            "longitude": 18.427616,
+            "attraction_image": "static/travel/attraction_images/castle-of-good-hope-cape-town-1024x570.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 3,
+        "fields": {
+            "name": "Two Oceans Aquarium",
+            "destination": 1,
+            "latitude": -33.907990,
+            "longitude": 18.417458,
+            "attraction_image": "static/travel/attraction_images/Two-Oceans-Aquarium-Cape-Town.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 4,
+        "fields": {
+            "name": "Robben Island",
+            "destination": 1,
+            "latitude": -33.80526,
+            "longitude": 18.36983,
+            "attraction_image": "static/travel/attraction_images/prison-Robben-Island-South-Africa.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 5,
+        "fields": {
+            "name": "London Eye",
+            "destination": 3,
+            "latitude": 51.503342,
+            "longitude": -0.119676,
+            "attraction_image": "static/travel/attraction_images/london-eye.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 6,
+        "fields": {
+            "name": "Bourbon Street",
+            "destination": 11,
+            "latitude": 29.964322,
+            "longitude": -90.060532,
+            "attraction_image": "static/travel/attraction_images/bourbon-street-new-orleans.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 7,
+        "fields": {
+            "name": "St. Louis Cathedral",
+            "destination": 11,
+            "latitude": 29.957998,
+            "longitude": -90.063752,
+            "attraction_image": "static/travel/attraction_images/st-louis-cathedral.jpeg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 8,
+        "fields": {
+            "name": "Murchison Falls",
+            "destination": 12,
+            "latitude": 2.277850,
+            "longitude": 31.683626,
+            "attraction_image": "static/travel/attraction_images/Murchison-Falls.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 9,
+        "fields": {
+            "name": "Wembley Stadium",
+            "destination": 3,
+            "latitude": 51.556066,
+            "longitude": -0.279604,
+            "attraction_image": "static/travel/attraction_images/Wembley_Stadium.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 10,
+        "fields": {
+            "name": "Stone Town",
+            "destination": 2,
+            "latitude": -6.16266,
+            "longitude": 39.19001,
+            "attraction_image": "static/travel/attraction_images/Stone-Town-Zanzibar.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 11,
+        "fields": {
+            "name": "Buckingham Palace",
+            "destination": 3,
+            "latitude": 51.500834,
+            "longitude": -0.142658,
+            "attraction_image": "static/travel/attraction_images/buckingham-palace.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 12,
+        "fields": {
+            "name": "Kuza Cave",
+            "destination": 2,
+            "latitude": -6.303800,
+            "longitude": 39.533398,
+            "attraction_image": "static/travel/attraction_images/kuza_cave.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 13,
+        "fields": {
+            "name": "The African Renaissance Monument",
+            "destination": 15,
+            "latitude": 14.72092,
+            "longitude": -17.49441,
+            "attraction_image": "static/travel/attraction_images/african-renaissance-monument.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 14,
+        "fields": {
+            "name": "Burj Khalifa",
+            "destination": 8,
+            "latitude": 25.197035,
+            "longitude": 55.274213,
+            "attraction_image": "static/travel/attraction_images/burj-khalifa.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 15,
+        "fields": {
+            "name": "Rocklands Bird Sanctuary",
+            "destination": 13,
+            "latitude": 18.427009,
+            "longitude": -77.941818,
+            "attraction_image": "static/travel/attraction_images/rocklands-bird-sanctuary.jpeg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 16,
+        "fields": {
+            "name": "Dubai Aquarium and Underwater Zoo",
+            "destination": 8,
+            "latitude": 25.197715,
+            "longitude": 55.278846,
+            "attraction_image": "static/travel/attraction_images/dubai-aquarium.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 17,
+        "fields": {
+            "name": "Le Jardin Majorelle",
+            "destination": 5,
+            "latitude": 31.641291,
+            "longitude": -8.002935,
+            "attraction_image": "static/travel/attraction_images/jardin-majorelle.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 18,
+        "fields": {
+            "name": "Rose Hall Great House",
+            "destination": 13,
+            "latitude": 18.516329,
+            "longitude": -77.819223,
+            "attraction_image": "static/travel/attraction_images/rose-hall-great-house.jpeg"
+        }
+    },
+    {
+       "model": "travel.attraction",
+       "pk": 19,
+       "fields": {
+            "name": "Darajani Bazaar",
+            "destination": 2,
+            "latitude": -6.161928462237404, 
+            "longitude": 39.193695399999996,
+            "attraction_image": "static/travel/attraction_images/Darajan-Market3-806x440-1.jpg"
+       } 
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 20,
+        "fields": {
+            "name": "Tokyo Skytree",
+            "destination": 9,
+            "latitude": 35.710046,
+            "longitude": 139.810714,
+            "attraction_image": "static/travel/attraction_images/Tokyo-Skytree.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 21,
+        "fields": {
+            "name": "Cristo Redentor",
+            "destination": 18, 
+            "latitude": -22.951917,
+            "longitude": -43.210458,
+            "attraction_image": "static/travel/attraction_images/christ-the-redeemer.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 22,
+        "fields": {
+            "name": "Yu Garden",
+            "destination": 19,
+            "latitude": 31.228924,
+            "longitude": 121.487754,
+            "attraction_image": "static/travel/attraction_images/yu-garden.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 23,
+        "fields": {
+            "name": "Ipanema Beach",
+            "destination": 18, 
+            "latitude": -22.98730,
+            "longitude": -43.20507,
+            "attraction_image": "static/travel/attraction_images/Ipanema-beach.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 24,
+        "fields": {
+            "name": "India Gate",
+            "destination": 16,
+            "latitude": 28.612932,
+            "longitude": 77.229492,
+            "attraction_image": "static/travel/attraction_images/India-Gate.jpeg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 25, 
+        "fields": {
+            "name": "Copacabana Beach",
+            "destination": 18,
+            "latitude": -22.97259,
+            "longitude":  -43.18375,
+            "attraction_image": "static/travel/attraction_images/copacabana-beach.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 26,
+        "fields": {
+            "name": "Red Fort",
+            "destination": 16,
+            "latitude": 28.65572,
+            "longitude": 77.24074,
+            "attraction_image": "static/travel/attraction_images/Red-Fort.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 27,
+        "fields": {
+            "name": "Source of the Nile Bridge",
+            "destination": 20,
+            "latitude": 0.438618,
+            "longitude": 33.188232,
+            "attraction_image": "static/travel/attraction_images/jinja-bridge.jpg"
+        }
+    },
+    {
+        "model": "travel.attraction",
+        "pk": 28,
+        "fields": {
+            "name": "Sydney Opera House",
+            "destination": 17,
+            "latitude": -33.857199,
+            "longitude": 151.215123,
+            "attraction_image": "static/travel/attraction_images/sydney-opera-house.jpg"
+        }
+    }
+]

@@ -1,0 +1,161 @@
+{% extends "travel/layout.html" %}
+{% load static %}
+
+{% block title%}Available Destinations | Travel Pouch{% endblock %}
+{% block body %}
+    <h1 class="my-4 text-center title">Available Destinations</h1>
+    <p class="text-center">Take a look at all the places you can travel to and start planning!</p>
+    <div class="container mx-auto py-4">
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#card-view" title="Card view"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#map-view" title="Map view"><i class="fa fa-map-o" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div id="card-view" class="container tab-pane active">
+            <div class="container my-4">
+                <input type="text" id="search-bar" class="form-control w-75 mx-auto" onkeyup="searchDestination()"
+                placeholder="Search for destinations" title="Type in a name of a place">
+            </div>
+            <div id="all-destinations" class="container">
+                <h3>Africa</h3>
+                
+                <div id="africa-destinations" class="row">
+                    {% for destination in destinations %}
+                    {% if destination.region == "Africa" %}
+                        <div class="col-lg-4 col-md-6 mb-4 pt-2">
+                            <div class="card h-100 border">
+                                <img class="card-img-top" src="{{ destination.destination_image }}" alt="{{ destination.name }}, {{ destination.location }}">
+                                <div class="card-body">
+                                    <a href="{% url 'destination' destination.id %}" class="stretched-link"><h4 class="card-title">{{ destination.name }}</h4></a>
+                                    <p><small>{{ destination.location }}</small></p>
+                                    <p class="card-text">{{ destination.description|default:"No description available" }}</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Image credit: {{ destination.image_attribution }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+        
+                <h3>Asia and Middle East</h3>
+        
+                <div id="asia-destinations" class="row">
+                    {% for destination in destinations %}
+                    {% if destination.region == "Asia and Middle East" %}
+                        <div class="col-lg-4 col-md-6 mb-4 pt-2">
+                            <div class="card h-100 border">
+                                <img class="card-img-top" src="{{ destination.destination_image }}" alt="{{ destination.name }}, {{ destination.location }}">
+                                <div class="card-body">
+                                    <a href="{% url 'destination' destination.id %}" class="stretched-link"><h4 class="card-title">{{ destination.name }}</h4></a>
+                                    <p><small>{{ destination.location }}</small></p>
+                                    <p class="card-text">{{ destination.description|default:"No description available" }}</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Image credit: {{ destination.image_attribution }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+        
+                <h3>Europe</h3>
+        
+                <div id="europe-destinations" class="row">
+                    {% for destination in destinations %}
+                    {% if destination.region == "Europe" %}
+                        <div class="col-lg-4 col-md-6 mb-4 pt-2">
+                            <div class="card h-100 border">
+                                <img class="card-img-top" src="{{ destination.destination_image }}" alt="{{ destination.name }}, {{ destination.location }}">
+                                <div class="card-body">
+                                    <a href="{% url 'destination' destination.id %}" class="stretched-link"><h4 class="card-title">{{ destination.name }}</h4></a>
+                                    <p><small>{{ destination.location }}</small></p>
+                                    <p class="card-text">{{ destination.description|default:"No description available" }}</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Image credit: {{ destination.image_attribution }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+
+                <h3>Oceania</h3>
+
+                <div id="oceania-destinations" class="row">
+                    {% for destination in destinations %}
+                    {% if destination.region == "Oceania" %}
+                        <div class="col-lg-4 col-md-6 mb-4 pt-2">
+                            <div class="card h-100 border">
+                                <img class="card-img-top" src="{{ destination.destination_image }}" alt="{{ destination.name }}, {{ destination.location }}">
+                                <div class="card-body">
+                                    <a href="{% url 'destination' destination.id %}" class="stretched-link"><h4 class="card-title">{{ destination.name }}</h4></a>
+                                    <p><small>{{ destination.location }}</small></p>
+                                    <p class="card-text">{{ destination.description|default:"No description available" }}</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Image credit: {{ destination.image_attribution }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+        
+                <h3>North & Central America and Caribbean</h3>
+        
+                <div id="north-america-destinations" class="row">
+                    {% for destination in destinations %}
+                    {% if destination.region == "North and Central America & Caribbean" %}
+                        <div class="col-lg-4 col-md-6 mb-4 pt-2">
+                            <div class="card h-100 border">
+                                <img class="card-img-top" src="{{ destination.destination_image }}" alt="{{ destination.name }}, {{ destination.location }}">
+                                <div class="card-body">
+                                    <a href="{% url 'destination' destination.id %}" class="stretched-link"><h4 class="card-title">{{ destination.name }}</h4></a>
+                                    <p><small>{{ destination.location }}</small></p>
+                                    <p class="card-text">{{ destination.description|default:"No description available" }}</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Image credit: {{ destination.image_attribution }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+
+                <h3>South America</h3>
+
+                <div id="south-america-destinations" class="row">
+                    {% for destination in destinations %}
+                    {% if destination.region == "South America" %}
+                        <div class="col-lg-4 col-md-6 mb-4 pt-2">
+                            <div class="card h-100 border">
+                                <img class="card-img-top" src="{{ destination.destination_image }}" alt="{{ destination.name }}, {{ destination.location }}">
+                                <div class="card-body">
+                                    <a href="{% url 'destination' destination.id %}" class="stretched-link"><h4 class="card-title">{{ destination.name }}</h4></a>
+                                    <p><small>{{ destination.location }}</small></p>
+                                    <p class="card-text">{{ destination.description|default:"No description available" }}</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Image credit: {{ destination.image_attribution }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div id="map-view" class="container tab-pane fade">
+            <div id="destination-list-map" class="container py-2">
+            </div>
+        </div>
+    </div>
+    <script src="{% static "travel/js/map_view.js" %}"></script>
+    <script src="{% static 'travel/js/search_destination.js' %}"></script>
+{% endblock %}

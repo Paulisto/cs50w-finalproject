@@ -1,0 +1,50 @@
+{% extends "travel/layout.html" %}
+{% load static %}
+
+{% block title %}Create Itinerary for {{ trip.destination}} || Travel Pouch{% endblock %}
+{% block body%}
+    <h1 class="my-4 text-center title">Create Itinerary for {{ trip.destination}}</h1>
+
+    <div class="card mx-auto w-25">
+        <div class="card-body text-center">
+            <p>From {{ trip.start_date }} to {{ trip.end_date }}</p>
+            <p>Budget:</p>
+            <h4 class="text-success">UGX {{ trip.budget }}</p>
+        </div>
+    </div>
+
+    <div class="container ml-4 py-4">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ formset.management_form }}
+            <h3>Add Activities for {{ trip.destination }}</h3>
+
+            <div class="row">
+                {% for form in formset %}
+                <div class="card border border-dark my-4 p-2">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            {{ form.name.label_tag }}
+                            {{ form.name }}
+                        </div>
+                        <div class="form-group col-md-6">
+                            {{ form.description.label_tag }}
+                            {{ form.description }}
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="{{ form.date.id_for_label }}">Date</label>
+                            {{ form.date }}
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="{{ form.time.id_for_label }}">Time</label>
+                            {{ form.time }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <button type="submit" class="btn btn-primary">Save Itinerary</button>
+        </form>
+    </div>
+
+{% endblock %}
